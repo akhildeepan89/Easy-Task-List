@@ -15,12 +15,34 @@
 	
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	color: #FFF;
 	background-color: var(--dark);
+	padding-bottom: 100px;
+	overflow-x: hidden;
+}
+
+.back-button i{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	font-size: 3rem;
+	right: -15px;
+	top: 15px;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.back-button i:hover{
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 header {
@@ -155,3 +177,62 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-bottom: 0;
+
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+	text-align: center;
+}
+.copyright i{
+    color: crimson;
+}
+@media screen and (max-width: 600px) {
+	
+	.back-button i{
+		font-size: 1.25rem;
+		right: -8px;
+		top: 5px;
+	}
+
+	header h1{ 
+		font-size: 1.5rem;
+	}
+	
+	
+	#new-task-input {
+		font-size: 0.7rem;
+	}
+
+	#new-task-submit {
+		font-size: 0.7rem;
+	}
+	
+	.task-list h2 {
+		font-size: 1.2rem;
+	}
+	
+	.task .content .text {
+		font-size: 0.65rem;
+	}
+
+	.task .actions button {
+		font-size: 0.65rem;
+	}
+	
+	.copyright{
+		font-size: 0.9rem;
+		padding: 27px 0;
+	}
+	.copyright i{
+		font-size: 0.9rem;
+		color: crimson;
+	}
+  }
