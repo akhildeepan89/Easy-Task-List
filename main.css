@@ -1,8 +1,8 @@
 :root {
-	--dark: #374151;
+	--dark: #080808;
 	--darker: #1F2937;
 	--darkest: #111827;
-	--grey: #6B7280;
+	--grey: #ababab;
 	--pink: #EC4899;
 	--purple: #8B5CF6;
 	--light: #EEE;
@@ -29,21 +29,25 @@ body {
 	overflow-x: hidden;
 }
 
-.back-button i{
+.back-button a i{
 	position: absolute;
 	display: flex;
 	width: 100%;
 	font-size: 3rem;
 	right: -15px;
 	top: 15px;
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-image: linear-gradient(to right, #35abcf,#137cb3);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.back-button i:hover{
+.back-button a i:hover{
 	cursor: pointer;
 	opacity: 0.5;
 }
+.back-button a i:visited { 
+	text-decoration: none; 
+}
+
 
 header {
 	padding: 2rem 1rem;
@@ -88,7 +92,7 @@ input, button {
 	color: var(--pink);
 	font-size: 1.25rem;
 	font-weight: 700;
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-image: linear-gradient(to right, #35abcf,#137cb3);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
@@ -143,7 +147,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-	color: var(--pink);
+	color: #35abcf;
 }
 
 .task .actions {
@@ -169,7 +173,7 @@ main {
 }
 
 .task .actions .edit {
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-image: linear-gradient(to right, #35abcf,#137cb3);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -192,7 +196,7 @@ main {
 	text-align: center;
 }
 .copyright i{
-    color: crimson;
+    color: #137cb3;
 }
 @media screen and (max-width: 600px) {
 	
@@ -233,6 +237,5 @@ main {
 	}
 	.copyright i{
 		font-size: 0.9rem;
-		color: crimson;
 	}
   }
