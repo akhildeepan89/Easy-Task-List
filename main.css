@@ -200,16 +200,9 @@ main {
 }
 @media screen and (max-width: 600px) {
 	
-	.back-button i{
-		font-size: 1.25rem;
-		right: -8px;
-		top: 5px;
-	}
-
 	header h1{ 
 		font-size: 1.5rem;
 	}
-	
 	
 	#new-task-input {
 		font-size: 0.7rem;
@@ -237,5 +230,10 @@ main {
 	}
 	.copyright i{
 		font-size: 0.9rem;
+	}
+	.back-button a i{
+		font-size: 1.6rem;
+		right: -8px;
+		top: 5px;
 	}
   }
